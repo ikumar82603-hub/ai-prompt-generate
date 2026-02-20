@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Prompt Gallery</title>
+</head>
+<body style="background:black;color:white;text-align:center;">
+
+<h1>🔥 AI Prompt Gallery</h1>
+
+<img src="https://via.placeholder.com/300" width="300"><br><br>
+
+<textarea id="p1" style="width:300px;height:80px;">
+Ultra realistic baby portrait, 4k, cinematic lighting
+</textarea><br><br>
+
+<button onclick="copyText()">Copy Prompt</button>
+
+<script>
+function copyText(){
+var copy=document.getElementById("p1");
+copy.select();
+document.execCommand("copy");
+alert("Prompt Copied!");
+}
+</script>
+
+</body>
+</html>
